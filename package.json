@@ -1,0 +1,22 @@
+{
+  "name": "es7-skeleton",
+  "version": "1.0.0",
+  "description": "Generates projects folder and stuff like a gulp, babel, mocha, etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-cli": "6.23.0",
+    "babel-preset-env": "1.1.10",
+    "del": "2.2.2",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-mocha": "4.0.1",
+    "gulp-sourcemaps": "2.4.1",
+    "should": "11.2.0"
+  },
+  "author": "Anton L <anton.ecma@gmail.com>",
+  "license": "MIT",
+  "keywords": []
+}
