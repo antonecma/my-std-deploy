@@ -20,7 +20,7 @@ gulp.task('test-all', ['build-es7-with-source-maps'], () =>
 gulp.task('build-es7-with-source-maps', ['del-build'], () =>
     gulp.src('src/**/*.js')
         .pipe(sourcemaps.init())
-        .pipe(gulpBabel({ presets: ['env']}))
+        .pipe(gulpBabel({ presets: ['env'], plugins: ['transform-runtime']}))
         .pipe(sourcemaps.write('.', { sourceRoot: path.join(__dirname, 'src')}))
         .pipe(gulp.dest('build'))
 );
